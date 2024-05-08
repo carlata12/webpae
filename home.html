@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #000000;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background:D6A765;
+;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2></h2>
+<p></p>
+<p></p>
+
+<header>
+  <h2>HOME</h2>
+</header>
+
+<section>
+  <article>
+    <h1>LAST PAGE</h1>
+    <p>this is now the end of my web page in this web page i have made 3 other pages for u to look at 
+	DTE/SCHOOL/ABOUT ME in thoes three web pages i have talked abt a couple of things i have also shown u oneof my wokk projects and explained more abt that 
+	thank u so much for visting my web pages school has taught me alot through out these 2 and a half years ive also met alot of new people and made more friends 
+	altough i left skl last yr n came back to oc almost to thhe end of the yr now im yr 11 n im happy to be back with my friends 
+	that i met through yr 9 my home ive had an couple things happen at home i do not live w my parents my nenna has been taking care of me 
+	since i was a lttle baby its really gonna be hard for me when its her time . this is now the end of my page thank you .</p>
+    <p></p>
+  </article>
+    <nav>
+    <ul>
+      <li><a href="index.html">ABOUT</a></li>
+      <li><a href="dte.html">DTE</a></li>
+      <li><a href="school.html">SCHOOL</a></li> 
+	  <li><a href="home.html">HOME</a></li>
+    </ul>
+  </nav>
+</section>
+
+<footer>
+  <p>page 4</p>
+</footer>
+
+</body>
+</html>
